@@ -1,0 +1,22 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": "./",
+    "resolveJsonModule": true,
+    "module": "esNext",
+    "types": ["node"],
+    "paths": {
+      "@generated/*": ["app/generated/*"],
+      "@services/*": ["app/services/*"],
+      "@util/*": ["app/util/*"],
+      "@shared/*": ["app/shared/*"],
+      "@environment/*": ["environments/*"],
+      "@pavlov/*": ["../node_modules/@pavlov/*"]
+    }
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "paths": {
+      "@generated/*": ["src/app/generated/*"],
+      "@services/*": ["src/app/services/*"],
+      "@util/*": ["src/app/util/*"],
+      "@shared/*": ["src/app/shared/*"],
+      "@environment/*": ["src/environments/*"],
+      "@pavlov/*": ["node_modules/@pavlov/*"]
+    },
+    "outDir": "./dist/out-tsc",
+    "sourceMap": false,
+    "declaration": false,
+    "module": "esNext",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es6",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2016",
+      "dom"
+    ]
+  },
+  "include": ["src"]
+}
